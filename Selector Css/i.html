@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>   
+      /* .box:first-child {
+         color: red;
+      }
+      .box::first-line{
+         background-color: blue;
+      }
+      .card *{
+         font-size : 2rem;
+      }
+      p, a, .box , [data-color="primary"] {
+         margin-top: 60px;
+      }
+      .box:nth-child(even){
+         color: yellow;
+      }
+      .box:nth-last-child(1){
+         background-color: black;
+      } */
+      .card::before {
+         content: "This is Krushna Skahre" ;
+         color : blue;
+      }
+      .card::after {
+         content: "This is Krushna Skahre" ;
+         color : red;
+      }
+
+      /* This will change the properties of selected elements on web page */
+      ::selection {
+         color : yellow;
+         background-color: black;
+      }
+
+      .box::first-letter {
+         color : pink;
+         font-size : 30px;
+      }
+
+      input::placeholder {
+         color : blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div data-color="primary" class="box">Card 1</div>
+      <div class="box">Card 2</div>
+      <div class="box">Card 3</div>
+      <input type="text" placeholder="Type the name">
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+*{
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+}
+
+nav {
+   height : 80px;
+   width : 100%;
+   background-color: rgb(13, 2, 79);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.nav-elem {
+   margin-right : 70px;
+   font-size : 2rem;
+}
+
+nav .nav-elem a{
+   text-decoration: none;
+   color: White;
+}
+
+
+.main-area {
+   height : 90vh;
+   width : 100%;
+   background-color: blue;
+   display: flex;
+   justify-content: center;
+}
+.main-boxes {
+   display: flex;
+   justify-content: center;
+}
+.boxes {
+   height : 600px;
+   width : 600px;
+   background-color: red;
+   margin-right : 50px;
+   margin-top : 80px;
+}
+
+
+.main-img {
+   position : fixed;
+   bottom : 25px;
+   right : 20px;
+}
+.main-img img {
+   height : 100px;
+   width : 100px;
+   border-radius: 50%;
+}
+
+
+.bottom-area {
+   height : 60vh;
+   width : 100%;
+   background-color: pink;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.text-area {
+   height : 300px;
+   width : 1500px;
+   border : 2px solid black;
+   border-radius: 40px;
+}
+.text-area p{
+   text-align: center;
+   font-size: 3rem;
+   position: relative;
+   top : 30%;
+}
+
+
+footer {
+   height : 80px;
+   width : 100%;
+   background-color: rgb(19, 19, 33);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.foot-text p {
+  color : white;
+  display: inline;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-right : 40px;
+}

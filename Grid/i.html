@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      .boxes {
+         border : 2px solid black;
+         display: grid;
+      /* grid-template-columns: [pehla]100px [dusra]120px  [tesra];      Name can also be given to 
+         the colum or row*/
+         grid-template-columns: 100px 120px;/*Create vertical & horizontal box of 100px */
+         grid-template-rows: 100px 100px 100px;
+
+      }
+      .box {
+         height : 50px;
+         width : 50px;
+         border : 2px solid red;
+      }
+      .item-4{
+         /* This is used to move any part of grid/element to the another part or to play & adjust the element */
+
+         /* grid-row-start: 1;
+         grid-row-end: 2; */
+         grid-row: 1/2; /*Start at 1 & end at 2 */
+         grid-column: 1/2;
+         /* grid-row: pehla/dusra; */
+      }
+      .item-1{
+         grid-row: 1/2;
+         grid-column: 1/2;
+      }
+   </style>
+</head>
+<body>
+   <div class="boxes">
+      <div class="box item-1">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box item-4">4</div>
+      <div class="box">5</div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      *{
+         margin: 0;
+         padding: 0;
+      }
+
+      /* Here we have defined variables using the root */
+      /* So, these defined color can be used anywhere in this file where color property required */
+      /* We can add anything here which we want global or alredy defined so to access anytime */
+      /* Thus, variables are created & set the revised using property */
+      :root {
+       --color : blue;
+       --seccolor: brown;
+       --defpadd: 10px;
+      }
+
+      .box1 {
+         height : 100px;
+         width : 100%;
+         background-color: green;
+      }
+      ul{
+         display: flex;
+      }
+      ul li{
+         list-style: none;
+         margin : 30px 40px 10px 50px;
+         font-size : 1.5rem;
+         padding : var(--defpadd);
+         background-color: var(--color,--seccolor);  /* Variable defined here */
+      }
+      ul li:first-child{
+         --color: pink;
+         background-color: var(--color);
+      }
+
+      .para {
+         height : 100px;
+         width : 100%;
+         background-color: yellowgreen;
+         text-align: center;
+      }
+   </style>
+</head>
+<body>
+    <div class="box1">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="para">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, dolore optio quisquam expedita quos, saepe aliquam iste unde accusantium beatae nisi! Harum aut distinctio quis asperiores perspiciatis vitae minus temporibus mollitia? Reiciendis sed voluptatibus fugit illo veritatis magnam, maiores voluptates quibusdam nulla? Quam in alias aliquam velit esse molestiae odio commodi omnis pariatur accusantium reiciendis nisi voluptatibus temporibus doloribus minima est consectetur culpa ipsa iste, facere, magnam assumenda illo.
+    </div>
+</body>
+</html>
